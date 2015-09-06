@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2B3ECE2F-5EB0-43B2-87B7-CAC7C8D41F09}</ProjectGuid>
+    <Compiler>
+      <Compiler ctype="GppCompiler" />
+    </Compiler>
+    <Language>CPP</Language>
+    <Target>Bin</Target>
+    <ProductVersion>12.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <Packages>
+      <Packages>
+        <Package file="/home/carta/prog/Projects/APPLICATIONS/glue/glue/glue.md.pc" name="glue" IsProject="True" />
+        <Package file="/home/carta/prog/Projects/APPLICATIONS/glue/rng/rng.md.pc" name="rng" IsProject="True" />
+        <Package file="/home/carta/prog/Projects/LIBRARIES/SmartDataCPP/SmartDataCPP.md.pc" name="SmartDataCPP" IsProject="True" />
+      </Packages>
+    </Packages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug</OutputPath>
+    <OutputName>gluetest</OutputName>
+    <CompileTarget>Bin</CompileTarget>
+    <DefineSymbols>DEBUG MONODEVELOP</DefineSymbols>
+    <SourceDirectory>.</SourceDirectory>
+    <ExtraLinkerArguments>-lpthread</ExtraLinkerArguments>
+    <ExtraCompilerArguments>-g -O0</ExtraCompilerArguments>
+    <Externalconsole>true</Externalconsole>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release</OutputPath>
+    <Externalconsole>true</Externalconsole>
+    <OutputName>gluetest</OutputName>
+    <CompileTarget>Bin</CompileTarget>
+    <OptimizationLevel>3</OptimizationLevel>
+    <DefineSymbols>MONODEVELOP</DefineSymbols>
+    <SourceDirectory>.</SourceDirectory>
+    <ExtraLinkerArguments>-lpthread</ExtraLinkerArguments>
+    <Includes>
+      <Includes>
+        <Include>/home/carta/prog/Projects/APPLICATIONS/glue/glue</Include>
+        <Include>/home/carta/prog/Projects/APPLICATIONS/glue/rng</Include>
+      </Includes>
+    </Includes>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'fastdbg|AnyCPU' ">
+    <OutputPath>.</OutputPath>
+    <OutputName>
+    </OutputName>
+    <CompileTarget>Bin</CompileTarget>
+    <ExtraLinkerArguments>-lpthread</ExtraLinkerArguments>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="main.cpp" />
+  </ItemGroup>
+</Project>
