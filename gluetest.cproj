@@ -9,13 +9,11 @@
     </Compiler>
     <Language>CPP</Language>
     <Target>Bin</Target>
-    <ProductVersion>12.0.0</ProductVersion>
-    <SchemaVersion>2.0</SchemaVersion>
     <Packages>
       <Packages>
-        <Package file="/home/carta/prog/Projects/APPLICATIONS/glue/glue/glue.md.pc" name="glue" IsProject="True" />
-        <Package file="/home/carta/prog/Projects/APPLICATIONS/glue/rng/rng.md.pc" name="rng" IsProject="True" />
-        <Package file="/home/carta/prog/Projects/LIBRARIES/SmartDataCPP/SmartDataCPP.md.pc" name="SmartDataCPP" IsProject="True" />
+        <Package file="/home/mcarta/prog/Projects/LIBRARIES/CPP/glue/glue.md.pc" name="glue" IsProject="True" />
+        <Package file="/home/mcarta/prog/Projects/LIBRARIES/CPP/rng/rng.md.pc" name="rng" IsProject="True" />
+        <Package file="/home/mcarta/prog/Projects/LIBRARIES/CPP/SmartDataCPP/SmartDataCPP.md.pc" name="SmartDataCPP" IsProject="True" />
       </Packages>
     </Packages>
   </PropertyGroup>
@@ -41,8 +39,8 @@
     <ExtraLinkerArguments>-lpthread</ExtraLinkerArguments>
     <Includes>
       <Includes>
-        <Include>/home/carta/prog/Projects/APPLICATIONS/glue/glue</Include>
-        <Include>/home/carta/prog/Projects/APPLICATIONS/glue/rng</Include>
+        <Include>/home/mcarta/prog/Projects/LIBRARIES/CPP/glue</Include>
+        <Include>/home/mcarta/prog/Projects/LIBRARIES/CPP/rng</Include>
       </Includes>
     </Includes>
   </PropertyGroup>
@@ -55,5 +53,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="gluetest.cproj" />
   </ItemGroup>
 </Project>
