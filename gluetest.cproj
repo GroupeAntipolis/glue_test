@@ -39,10 +39,14 @@
     <ExtraLinkerArguments>-lpthread</ExtraLinkerArguments>
     <Includes>
       <Includes>
-        <Include>/home/mcarta/prog/Projects/LIBRARIES/CPP/glue</Include>
-        <Include>/home/mcarta/prog/Projects/LIBRARIES/CPP/rng</Include>
+        <Include>/mnt/ntfs/prog/Projects/TEST/gluetest/include</Include>
       </Includes>
     </Includes>
+    <LibPaths>
+      <LibPaths>
+        <LibPath>${ProjectDir}/libglue</LibPath>
+      </LibPaths>
+    </LibPaths>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'fastdbg|AnyCPU' ">
     <OutputPath>.</OutputPath>
