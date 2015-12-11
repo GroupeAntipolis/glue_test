@@ -15,7 +15,9 @@ Feel free to ask any <i>numerical</i> (coherent(2)) question to your glue graph.
 ## Architectures ##
 
 > branch <b>master</b> is 32 bits
-> branch <b>master</b> = \b x86 = 32bits binaries
+>
+> branch <b>master</b> = branch <b>x86</b> = 32bits binaries
+>
 > branch <b>x86_64</b> is 64 bits
 
 ## Build from source ##
