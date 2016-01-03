@@ -65,6 +65,13 @@ class graph_manager
 	graph_coach* _graph_coach;
 
 	graph_player* _graph_player;
+	
+		
+	/// Saves a graph to a file
+	bool toFile(const char* filename);
+	
+	/// load a graph from a file
+	bool fromFile(const char* filename);
 
 };
 
