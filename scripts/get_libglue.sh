@@ -3,11 +3,11 @@ mkdir ../libglue
 
 rm ../include/*.h
 
-cp /mnt/ntfs/prog/Projects/LIBRARIES/CPP/glue/bin/Release/libglue.a ../libglue/
-cp /mnt/ntfs/prog/Projects/LIBRARIES/CPP/SmartDataCPP/bin/Release/libSmartDataCPP.a ../libglue/
-cp /mnt/ntfs/prog/Projects/LIBRARIES/CPP/rng/bin/Release/librng.a ../libglue/
+cp ~/dev/Projects/LIBRARIES/CPP/glue/libglue.a ../libglue/
+cp ~/dev/Projects/LIBRARIES/CPP/SmartData/bin/libSmartData.a ../libglue/
+cp ~/dev/Projects/LIBRARIES/CPP/rng/bin/librng.a ../libglue/
 
 
-cp /mnt/ntfs/prog/Projects/LIBRARIES/CPP/glue/*.h ../include/
-cp /mnt/ntfs/prog/Projects/LIBRARIES/CPP/SmartDataCPP/*.h ../include/
-cp /mnt/ntfs/prog/Projects/LIBRARIES/CPP/rng/*.h ../include/
+cp ~/dev/Projects/LIBRARIES/CPP/glue/*.h ../include/
+cp ~/dev/Projects/LIBRARIES/CPP/SmartData/*.h ../include/
+cp ~/dev/Projects/LIBRARIES/CPP/rng/*.h ../include/

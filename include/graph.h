@@ -48,12 +48,23 @@ extern "C" class graph
 	int input_width;
 	int output_width;
 
+	/// returns an array of bytes representing the graph
 	byte* toArray(int* size);
+	
+	/// reify a graph from a byte array
 	bool fromArray(byte* parray);
+	
+	/// clones a graph
 	graph* clone();
+	
+	/// Fast clone will be implemented in future
 	graph* fast_clone();
 
-	const static int version=1;
+    /// is graph initialized
+    bool is_init();
+
+
+	const static int version=2;
 
 	int min_nodes;
 	int max_nodes;

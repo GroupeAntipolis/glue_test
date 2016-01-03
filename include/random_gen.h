@@ -1,12 +1,6 @@
 ﻿//
 //
-//  	G.L.U.E. by M.C.G. 2015 
-//
-//  	Glue stands for 
-// 	Genetically Leaded Universal Evaluator.
-//
-// 		Add some glue in your code... 
-//
+//  	RNG by M.C.G. 2015
 //
 //
 //	Here is a RNG called WELL512, designed by the designers of 
